@@ -23,7 +23,7 @@
     <lombok.version>1.18.12</lombok.version>
     <log4j.version>1.2.17</log4j.version>
     <mysql.version>8.0.20</mysql.version>
-    <druid.version>1.2.0</druid.version>
+    <druid.version>1.2.1</druid.version>
     <mybatis.spring.boot.version>2.1.2</mybatis.spring.boot.version>
   </properties>
 
