@@ -5,9 +5,8 @@
 
     <resultMap id="BaseResultMap" type="com.fanghua.springcloud.entities.Payment">
         <id column="id" property="id" jdbcType="BIGINT"/>
-        <id column="serial" property="serial" jdbcType="VARCHAR"/>
+        <result column="serial" property="serial" jdbcType="VARCHAR"/>
     </resultMap>
-
 
     <!--  增  -->
     <!--  Payment标红了不用管，因为我们已经在yml文件中指定了Payment的位置了  -->
