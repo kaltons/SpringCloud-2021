@@ -4,10 +4,7 @@ import com.fanghua.springcloud.entities.CommonResult;
 import com.fanghua.springcloud.entities.Payment;
 import com.fanghua.springcloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
@@ -24,8 +21,8 @@ public class PaymentController {
     @Resource
     private PaymentService paymentService;
 
-    @PostMapping(value = "/payment/creat")
-    public CommonResult creat(Payment payment){
+    @PostMapping(value = "/payment/create")
+    public CommonResult creat(@RequestBody Payment payment){
         int result = paymentService.create(payment);
         log.info("插入的数据为：" + payment);
         log.info("插入结果：" + result);
