@@ -13,6 +13,7 @@
   <modules>
     <module>cloud-provider-payment-8001</module>
       <module>cloud-consumer-order-80</module>
+      <module>cloud-api-commons</module>
   </modules>
 
   <!--统一管理jar包版本-->
@@ -39,6 +40,7 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+
       <!--spring cloud 2020.0.3-->
       <dependency>
         <groupId>org.springframework.cloud</groupId>
@@ -47,6 +49,7 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+
       <!--spring cloud alibaba-->
       <dependency>
         <groupId>com.alibaba.cloud</groupId>
@@ -55,6 +58,7 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+
       <!--mysql-->
       <dependency>
         <groupId>mysql</groupId>
@@ -62,6 +66,7 @@
         <version>${mysql.version}</version>
         <scope>runtime</scope>
       </dependency>
+
       <!-- druid-->
       <dependency>
         <groupId>com.alibaba</groupId>
@@ -75,12 +80,14 @@
         <artifactId>mybatis-spring-boot-starter</artifactId>
         <version>${mybatis.spring.boot.version}</version>
       </dependency>
+
       <!--junit-->
       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
         <version>${junit.version}</version>
       </dependency>
+
       <!--log4j-->
       <dependency>
         <groupId>log4j</groupId>
