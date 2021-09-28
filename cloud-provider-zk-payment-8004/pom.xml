@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-provider-payment-8004</artifactId>
+    <artifactId>cloud-provider-zk-payment-8004</artifactId>
 
     <dependencies>
         <!-- 引用自己定义的api通用包，可以使用Payment支付Entity -->
