@@ -21,7 +21,14 @@ public class CustomLoadBalancerConfiguration {
                                                             LoadBalancerClientFactory loadBalancerClientFactory) {
         String name = environment.getProperty(LoadBalancerClientFactory.PROPERTY_NAME);
 
-        return new RandomLoadBalancer(loadBalancerClientFactory
+
+        // 切换LoadBalancer负载均衡算法
+//        return new RandomLoadBalancer(loadBalancerClientFactory
+//                .getLazyProvider(name, ServiceInstanceListSupplier.class),
+//                name);
+
+        // 使用自定义负载均衡算法
+        return new PeachLoadBalancer(loadBalancerClientFactory
                 .getLazyProvider(name, ServiceInstanceListSupplier.class),
                 name);
     }
