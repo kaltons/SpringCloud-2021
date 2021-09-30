@@ -15,9 +15,19 @@ import org.springframework.web.bind.annotation.PathVariable;
 @FeignClient(value = "CLOUD-PROVIDER-HYSTRIX-PAYMENT")
 public interface PaymentHystrixService {
 
+    /**
+     * Openfeign组件调用Hystrix8001支付服务
+     * @param id id
+     * @return 结果
+     */
     @GetMapping("/payment/hystrix/ok/{id}")
     String paymentInfoOk(@PathVariable("id") Integer id);
 
+    /**
+     * Openfeign组件调用Hystrix8001超时服务
+     * @param id id
+     * @return 结果
+     */
     @GetMapping("/payment/hystrix/timeout/{id}")
     String paymentInfoTimeOut(@PathVariable("id") Integer id);
 }
