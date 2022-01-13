@@ -1,4 +1,4 @@
-package com.fanghua.springcloud.service.controller;
+package com.fanghua.springcloud.controller;
 
 import com.fanghua.springcloud.service.IMessageProvider;
 import org.springframework.web.bind.annotation.GetMapping;
